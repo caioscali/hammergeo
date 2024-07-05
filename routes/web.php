@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\NavigationController;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\ServicoController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -17,6 +18,12 @@ use Illuminate\Support\Facades\Route;
 
 
 Route::get('/', [NavigationController::class, 'home'])->name('home');
+
+//Servico
+Route::resources([
+    'servicos' => ServicoController::class
+]);
+
 
 Route::get('/dashboard', function () {
     return view('dashboard');

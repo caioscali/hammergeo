@@ -1,8 +1,8 @@
-@extends('site.layout.layout')
-@section('title', 'Página Home')
+@extends('layouts.layout')
+@section('title', 'Hammergeo')
 @section('content')
 
-    @include('site.partials.banner-slide')
+    @include('partials.banner-slide')
 
     <div class="container">
         <section class="grid grid-cols-1 gap-6 md:grid-cols-1 lg:grid-cols-2 mt-20 p-5 bg-no-repeat w-full justify-between"
@@ -35,9 +35,9 @@
         </div>
     </div>
     <div class=" bg-white py-10">
-        <p class="font-bold flex w-full font-black text-3xl justify-center items-center">Clientes</p>
+        <p class="font-bold flex w-full text-3xl justify-center items-center">Clientes</p>
         <div class="w-full h-px bg-slate-200 my-2"></div>
-        @include('site.partials.banner-clientes')
+        @include('partials.banner-clientes')
     </div>
 
 @endsection

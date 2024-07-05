@@ -26,7 +26,7 @@
 <body class="bg-secondary">
 
     {{-- header --}}
-    @include('site.partials.header')
+    @include('partials.header')
 
     {{--  slide --}}
     {{-- @include('partials.banner-slide') --}}
@@ -35,7 +35,7 @@
     @yield('content')
 
     {{-- rodape --}}
-    @include('site.partials.footer')
+    @include('partials.footer')
 
 
     {{--  JQuery --}}
