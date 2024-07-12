@@ -29,11 +29,38 @@ $(document).ready(function () {
     $("#tel1").mask("(00) 00000 0000");
 });
 new Swiper(".swiper", {
-    slidesPerView: 4,
+    slidesPerView: 1,
+    breakpoints: {
+        640: {
+            slidesPerView: 1,
+        },
+        1024: {
+            slidesPerView: 4,
+        },
+    },
     loop: true,
     pagination: { clickable: true },
     spaceBetween: 30,
     autoplay: {
         delay: 2500,
+    },
+});
+new Swiper(".swiperObras", {
+    slidesPerView: 1,
+    loop: true,
+    spaceBetween: 50,
+    autoplay: {
+        delay: 3000,
+    },
+    breakpoints: {
+        640: {
+            slidesPerView: 1,
+        },
+        1024: {
+            slidesPerView: 2,
+        },
+        1680: {
+            slidesPerView: 4,
+        },
     },
 });

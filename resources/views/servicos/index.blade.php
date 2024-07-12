@@ -9,7 +9,7 @@
             @foreach ($servicos as $servico)
                 <div class="flex w-full flex-col p-4 items-start justify-center text-zinc-700">
                     <div>
-                        <img class="images-responsive rounded-lg mb-2 transition-all" src='{{ $servico->image }}'
+                        <img class="images-responsive rounded-lg mb-2 transition-all" src='{{ asset($servico->image) }}'
                             alt="Hammergeo" />
                     </div>
                     <p class="w-full font-bold mt-1 mb-2 px-2 py-1">{{ $servico->titulo }}</p>
@@ -19,7 +19,8 @@
                             {{ substr($servico->descricao, 0, 100) }}...
                         </span>
                     </div>
-                    <p class="paragrafo"><a href="#!" class="btn btn-small indigo">saiba mais</a></p>
+                    <p class="paragrafo"><a href="{{ route('servicos.show', $servico->id) }}"
+                            class="btn btn-small indigo">saiba mais</a></p>
                 </div>
             @endforeach
         </section>

@@ -17,9 +17,9 @@
             <div class="col s12 m6 l4 push-l2">
                 <ul>
                     <li><a href="{{ route('home') }}" class="text-secondary">Home</a></li>
-                    <li><a href="{{ route('home') }}" class="text-secondary">Serviços</a></li>
-                    <li><a href="{{ route('home') }}" class="text-secondary">Galeria</a></li>
-                    <li><a href="{{ route('home') }}" class="text-secondary">Contato</a></li>
+                    <li><a href="{{ route('servicos.index') }}" class="text-secondary">Serviços</a></li>
+                    <li><a href="{{ route('obras.index') }}" class="text-secondary">Obras</a></li>
+                    <li><a href="{{ route('contato') }}" class="text-secondary">Contato</a></li>
                 </ul>
             </div>
 

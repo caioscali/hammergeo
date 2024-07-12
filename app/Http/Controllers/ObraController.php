@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Servico;
+use App\Models\Obra;
 use Illuminate\Http\Request;
 
-class ServicoController extends Controller
+class ObraController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,8 +14,8 @@ class ServicoController extends Controller
      */
     public function index()
     {
-        return view('servicos.index', [
-            'servicos' => Servico::orderBy('titulo')->paginate()
+        return view('obras.index', [
+            'obras' => Obra::orderBy('titulo')->paginate()
         ]);
     }
 
@@ -26,7 +26,7 @@ class ServicoController extends Controller
      */
     public function create()
     {
-        return view('servicos.create');
+        //
     }
 
     /**
@@ -43,23 +43,23 @@ class ServicoController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\Servico  $servico
+     * @param  \App\Models\Obra  $obra
      * @return \Illuminate\Http\Response
      */
-    public function show(Servico $servico)
+    public function show(Obra $obra)
     {
-        return view('servicos.show', [
-            'servico' => $servico
+        return view('obras.show', [
+            'obra' => $obra
         ]);
     }
 
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\Servico  $servico
+     * @param  \App\Models\Obra  $obra
      * @return \Illuminate\Http\Response
      */
-    public function edit(Servico $servico)
+    public function edit(Obra $obra)
     {
         //
     }
@@ -68,10 +68,10 @@ class ServicoController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\Servico  $servico
+     * @param  \App\Models\Obra  $obra
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Servico $servico)
+    public function update(Request $request, Obra $obra)
     {
         //
     }
@@ -79,10 +79,10 @@ class ServicoController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\Servico  $servico
+     * @param  \App\Models\Obra  $obra
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Servico $servico)
+    public function destroy(Obra $obra)
     {
         //
     }

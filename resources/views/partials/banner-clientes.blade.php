@@ -1,22 +1,3 @@
-{{-- <div class="flex w-full justify-center items-center p-14">
-    <div class="sliderCliente">
-        <div class="boxCliente">
-            <a class="carousel-item" href="#one!"><img class="" src="images/clientes/07122018102053.jpg"></a>
-        </div>
-        <div class="boxCliente">
-            <a class="carousel-item" href="#two!"><img src="images/clientes/07122018102637.jpg"></a>
-        </div>
-        <div class="boxCliente">
-            <a class="carousel-item" href="#three!"><img src="images/clientes/07122018102956.jpg"></a>
-        </div>
-        <div class="boxCliente">
-            <a class="carousel-item" href="#four!"><img src="images/clientes/07122018103011.jpg"></a>
-        </div>
-        <div class="boxCliente">
-            <a class="carousel-item" href="#five!"><img src="images/clientes/07122018103521.jpg"></a>
-        </div>
-    </div>
-</div> --}}
 <!-- Slider main container -->
 <div class="swiper  bg-white">
     <!-- Additional required wrapper -->

@@ -1,7 +1,9 @@
 <?php
 
 use App\Http\Controllers\NavigationController;
+use App\Http\Controllers\ObraController;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\SendmailController;
 use App\Http\Controllers\ServicoController;
 use Illuminate\Support\Facades\Route;
 
@@ -18,10 +20,17 @@ use Illuminate\Support\Facades\Route;
 
 
 Route::get('/', [NavigationController::class, 'home'])->name('home');
+Route::get('/contato', [NavigationController::class, 'contato'])->name('contato');
+Route::post('/contato', [SendmailController::class, 'contato'])->name('novocontato');
 
 //Servico
 Route::resources([
     'servicos' => ServicoController::class
+]);
+
+//Obras
+Route::resources([
+    'obras' => ObraController::class
 ]);
 
 
