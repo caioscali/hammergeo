@@ -13,8 +13,12 @@
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-    {{-- css e javascript --}}
-    @vite(['resources/css/app.css', 'resources/js/app.js'])
+    <!-- Styles -->
+    <link rel="stylesheet" href="{{ asset('ccs/app.css') }}">
+
+    <!-- Scripts -->
+    <script src="{{ asset('js/app.js') }}" defer></script>
+    <script src="{{ asset('js/masck.js') }}" defer></script>
 
     {{-- css Materialize --}}
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
@@ -28,7 +32,7 @@
     {{-- header --}}
     @include('partials.header')
 
-    {{--  slide --}}
+    {{-- slide --}}
     {{-- @include('partials.banner-slide') --}}
 
     {{-- conteudo principal --}}
@@ -38,7 +42,7 @@
     @include('partials.footer')
 
 
-    {{--  JQuery --}}
+    {{-- JQuery --}}
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 
     {{-- javaScript Materialize --}}

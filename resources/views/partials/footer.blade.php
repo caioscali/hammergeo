@@ -12,6 +12,12 @@
                 <p>
                     CEP: 19.814-300
                 </p>
+                <p>
+                    <a class="flow-text text-primary" href="https://api.whatsapp.com/send?phone=5518998104664"
+                        target="_blank">
+                        <i class="fa-brands fa-whatsapp"></i> (18) 99810 4664
+                    </a>
+                </p>
             </div>
 
             <div class="col s12 m6 l4 push-l2">
@@ -31,7 +37,8 @@
             <a class="text-secondary" href="{{ route('home') }}" class="hover:underline">HAMMERGEO</a>
             . Todos os direitos reservados.</span>
         <span class="block text-sm text-gray-500 sm:text-center dark:text-gray-400">
-            <strong>Desenvolvido por <a class="text-secondary" href="https://scali.dev">Scali.dev</a></strong>
+            <strong>Desenvolvido por <a class="text-secondary" href="https://scali.dev"
+                    target="_blank">Scali.dev</a></strong>
         </span>
     </div>
 </footer>

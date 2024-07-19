@@ -3,7 +3,7 @@
         <li>
             <img src="{{ asset('images/banner/slider-1.jpg') }}" alt="[image]" title="Hammergeo">
             <div class="caption left-align ">
-                <h3 class="text-4xl">TRADO MECÂNICO SEM FLUIDO.</h3>
+                <h3 class="text-4xl">ESTACAS ESCAVADAS.</h3>
                 <h5 class="text-2xl">Estacas escavadas é a denominação para estacas que, são executadas por escavação
                     mecânica...</h5>
                 <a href="{{ route('servicos.index') }}" class="btn btn-small blue modal-trigger">Saiba mais</a>

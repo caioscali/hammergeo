@@ -13,7 +13,10 @@
                     Seg à Sex 08:00 às 18:00<br>
                     Sáb 08:00 às 12:00<br><br>
 
-                    <strong>Telefone:</strong> (18) 99810 4664<br>
+                    <strong>Telefone:</strong>
+                    <a class=" text-black" href="https://api.whatsapp.com/send?phone=5518998104664" target="_blank">
+                        <i class="fa-brands fa-whatsapp"></i> (18) 99810 4664
+                    </a><br>
                     <strong> E-mail: </strong> contato@hammergeo.com.br<br><br>
 
                     <strong> Endereço: </strong>Rua Sebastião Leite do Canto, n° 123<br>

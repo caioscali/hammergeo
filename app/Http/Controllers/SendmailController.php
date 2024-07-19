@@ -24,7 +24,7 @@ class SendmailController extends Controller
             'message' => $message
         ];
 
-        Mail::to('caio@srjtransporte.com.br')->send(new Contato($data));
+        Mail::to('junior@hammergeo.com.br')->send(new Contato($data));
         return redirect()->route('contato');
     }
 }

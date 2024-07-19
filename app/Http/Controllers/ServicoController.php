@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Locacao;
 use App\Models\Servico;
 use Illuminate\Http\Request;
 
@@ -15,7 +16,8 @@ class ServicoController extends Controller
     public function index()
     {
         return view('servicos.index', [
-            'servicos' => Servico::orderBy('titulo')->paginate()
+            'servicos' => Servico::orderBy('titulo')->paginate(),
+            'locacoes' => Locacao::orderBy('id')->paginate()
         ]);
     }
 

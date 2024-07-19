@@ -10,7 +10,7 @@ class NavigationController extends Controller
     public function home()
     {
         return view('home', [
-            'obras' => Obra::orderBy('titulo')->paginate('5')
+            'obras' => Obra::orderBy('titulo')
         ]);
     }
     public function contato()

@@ -24,5 +24,13 @@
                 </div>
             @endforeach
         </section>
+        <div class="flex w-full flex-col p-4 items-center justify-center text-zinc-700">
+            <p class="w-full font-bold mt-1 mb-2 px-2 py-1 text-3xl">Em contrução...</p>
+            <div class="w-full h-px bg-slate-200 my-2"></div>
+            <div>
+                <img class="w-full rounded-lg mb-2 max-h-80 hover:scale-105 transition-all"
+                    src='{{ asset('images/Em construção....png') }}' alt="Hammergeo" />
+            </div>
+        </div>
     </div>
 @endsection

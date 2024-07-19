@@ -7,7 +7,7 @@
 
         <div class="container ">
             <section
-                class="grid grid-cols-1 gap-6 md:grid-cols-1 lg:grid-cols-2 mt-20 h-96 p-5 bg-no-repeat w-full justify-between items-center"
+                class="grid grid-cols-1 gap-6 md:grid-cols-1 lg:grid-cols-2 mt-20 p-5 bg-no-repeat w-full justify-between items-center"
                 style=" background-image: url('{{ asset('images/img/fundo-quem-somos.png') }}')">
 
                 <div class="flex w-full flex-col p-5 items-center justify-center text-zinc-700">
@@ -34,8 +34,8 @@
             </section>
         </div>
     </div>
-    <div class="container ">
-        @if ($obras)
+    @if ($obras == '')
+        <div class="container ">
 
 
             <h1 class="font-bold flex w-full text-3xl justify-center items-center mt-8">Obras</h1>
@@ -70,8 +70,8 @@
                 </div>
 
             </div>
-        @endif
-    </div>
+        </div>
+    @endif
     <div class=" bg-white py-10">
         <p class="font-bold flex w-full text-3xl justify-center items-center">Clientes</p>
         <div class="w-full h-px bg-slate-200 my-2"></div>

@@ -15,7 +15,7 @@ class ObraController extends Controller
     public function index()
     {
         return view('obras.index', [
-            'obras' => Obra::orderBy('titulo')->paginate()
+            'obras' => Obra::orderBy('titulo')
         ]);
     }
 
